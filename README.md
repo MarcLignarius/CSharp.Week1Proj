@@ -23,11 +23,10 @@ _All the files necessary to create an Epicodus C# Week 1 Project._
 
 | Behavior | Input | Output |
 | ------------- |:-------------:| -----:|
-| If the user inputs a letter (t)  | x | true/false |
-| Lorem | x | true/false |
-| Lorem | x | true/false |
-| Lorem | x | true/false |
-| Lorem | x | true/false |
+| If the user inputs "Cat" as a sentence, and "Cat" as the word to find, the program will return 1 | "Cat" / "Cat" | 1 |
+| If the user inputs "cat" as a sentence, and "Cat" as the word to find, the program will return 1. The program is not case sensitive. | "cat" / "Cat" | 1 |
+| If the user inputs "Cats like to chase other cats" as a sentence, and "cats" as the word to find, the program will return 2 | "Cats like to chase other cats" / "cats" | 2 |
+| If the user inputs "Cats like to chase other cats" as a sentence, and "cat" as the word to find, the program will return 0. The program only looks for full word matches only. | "Cats like to chase other cats" / "cat" | 0 |
 
 ## Known Bugs
 

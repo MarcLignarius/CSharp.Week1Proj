@@ -3,18 +3,22 @@ using WordCounter.Models;
 using System;
 using System.Collections.Generic;
 
-namespace WordCounter.Tests;
+namespace WordCounter.Tests
 {
   [TestClass]
-  public class Sentence
+  public class SentenceTest
   {
 
-    // [TestMethod]
-    // public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
-    // {
-    //   // any necessary logic to prep for test; instantiating new classes, etc.
-    //   Assert.AreEqual(EXPECTED RESULT, CODE TO TEST);
-    // }
+    [TestMethod]
+    public int Sentence_CountWordInSentence_int()
+    {
+      // Arrange
+      Sentence newSentence = new Sentence("I love coding, coding is great!", "coding");
+      // Act
+      int result = newSentence.CountStringOccurrences("I love coding, coding is great!", "coding");
+      // Assert
+      Assert.AreEqual(0, result);
+    }
 
   }
 }

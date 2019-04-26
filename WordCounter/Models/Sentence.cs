@@ -16,7 +16,7 @@ namespace WordCounter.Models
 
     public int FindAndCountWord(string userInput, string findWord)
     {
-      if (userInput == findWord)
+      if (userInput.ToLower() == findWord.ToLower())
       {
         return 1;
       }

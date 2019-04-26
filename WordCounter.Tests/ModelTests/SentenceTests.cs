@@ -6,17 +6,19 @@ using System.Collections.Generic;
 namespace WordCounter.Tests
 {
   [TestClass]
-  public class RepeatCounterTest
+  public class SentenceTest
   {
-
     [TestMethod]
-    public int FindWord_CountToCompareInToCheck_OneMatch()
+
+    public void CheckSentence_CheckForOneInstance_Int1()
     {
-      // Arrange
-      RepeatCounter newToCheck = new RepeatCounter();
-      // Act
-      int result = newToCheck.FindWord("I love coding, coding is great!", "code");
-      // Assert
+      //Arrange
+      string userInput = "coding";
+      string findWord = "coding";
+      Sentence newSentence = new Sentence(userInput, findWord);
+      //Act
+      int result =newSentence.FindAndCountWord(userInput, findWord);
+      //Assert
       Assert.AreEqual(1, result);
     }
 

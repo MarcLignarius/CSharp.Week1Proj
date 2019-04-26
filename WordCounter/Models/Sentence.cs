@@ -3,16 +3,26 @@ using System.Collections.Generic;
 
 namespace WordCounter.Models
 {
-  public class RepeatCounter
+  public class Sentence
   {
+    private string _UserInput;
+    private string _FindWord;
 
-    public int FindWord(string toCheck, string toCompare)
+    public Sentence(string userInput, string findWord)
     {
-      if (toCheck == toCompare)
+      _UserInput = userInput;
+      _FindWord = findWord;
+    }
+
+    public int FindAndCountWord(string userInput, string findWord)
+    {
+      if (userInput == findWord)
       {
         return 1;
       }
       return 0;
     }
+
+
   }
 }

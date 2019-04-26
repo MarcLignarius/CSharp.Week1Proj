@@ -6,18 +6,18 @@ using System.Collections.Generic;
 namespace WordCounter.Tests
 {
   [TestClass]
-  public class SentenceTest
+  public class RepeatCounterTest
   {
 
     [TestMethod]
-    public int Sentence_CountWordInSentence_int()
+    public int FindWord_CountToCompareInToCheck_OneMatch()
     {
       // Arrange
-      Sentence newSentence = new Sentence("I love coding, coding is great!", "coding");
+      RepeatCounter newToCheck = new RepeatCounter();
       // Act
-      int result = newSentence.CountStringOccurrences("I love coding, coding is great!", "coding");
+      int result = newToCheck.FindWord("I love coding, coding is great!", "code");
       // Assert
-      Assert.AreEqual(0, result);
+      Assert.AreEqual(1, result);
     }
 
   }

@@ -3,31 +3,16 @@ using System.Collections.Generic;
 
 namespace WordCounter.Models
 {
-  public class Sentence
+  public class RepeatCounter
   {
-    private string ToSearch;
-    private string ToFind;
 
-    public Sentence(string toSearch, string toFind)
+    public int FindWord(string toCheck, string toCompare)
     {
-      ToSearch = toSearch;
-      ToFind = toFind;
-    }
-
-    public int CountStringOccurrences(string toSearch, string toFind)
-    {
+      if (toCheck == toCompare)
       {
-        int count = 0;
-        int i = 0;
-        while ((i = toSearch.IndexOf(toFind, i)) != -1)
-        {
-          i += toFind.Length;
-          count++;
-        }
-        return count;
+        return 1;
       }
       return 0;
     }
-
   }
 }

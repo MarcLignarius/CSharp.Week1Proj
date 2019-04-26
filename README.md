@@ -23,10 +23,10 @@ _All the files necessary to create an Epicodus C# Week 1 Project._
 
 | Behavior | Input | Output |
 | ------------- |:-------------:| -----:|
-| If the user inputs "Cat" as a sentence, and "Cat" as the word to find, the program will return 1 | "Cat" / "Cat" | 1 |
-| If the user inputs "cat" as a sentence, and "Cat" as the word to find, the program will return 1. The program is not case sensitive. | "cat" / "Cat" | 1 |
-| If the user inputs "Cats like to chase other cats" as a sentence, and "cats" as the word to find, the program will return 2 | "Cats like to chase other cats" / "cats" | 2 |
-| If the user inputs "Cats like to chase other cats" as a sentence, and "cat" as the word to find, the program will return 0. The program only looks for full word matches only. | "Cats like to chase other cats" / "cat" | 0 |
+| If the user inputs "I love coding." as a sentence, and "coding" as the word to find, the program will return 1. | "I love coding." / "coding" | 1 |
+| If the user inputs "I love coding." as a sentence, and "Coding" as the word to find, the program will return 1. The program is not case sensitive. | "I love coding" / "Coding" | 1 |
+| If the user inputs "I love coding. Coding is great!" as a sentence, and "coding" as the word to find, the program will return 2. | "I love coding. Coding is great!" / "coding" | 2 |
+| If the user inputs "I love coding. Coding is great! I guess decoding is cool too." as a sentence, and "coding" as the word to find, the program will return 2. The program only looks for full word matches only. | "I love coding. Coding is great! I guess decoding is cool too." / "coding" | 2 |
 
 ## Known Bugs
 

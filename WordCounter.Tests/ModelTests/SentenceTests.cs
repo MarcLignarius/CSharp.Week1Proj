@@ -6,7 +6,7 @@ using System.Collections.Generic;
 namespace WordCounter.Tests;
 {
   [TestClass]
-  public class Word
+  public class Sentence
   {
 
     // [TestMethod]

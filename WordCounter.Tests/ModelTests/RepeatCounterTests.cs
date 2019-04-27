@@ -34,5 +34,14 @@ namespace WordCounter.Tests
       Assert.AreEqual(2, newRepeatCounter.AddWordMatches());
     }
 
+    [TestMethod]
+    public void CheckSentence_IgnorePartials_Int0()
+    {
+      //Arrange
+      RepeatCounter newRepeatCounter = new RepeatCounter("I guess decoding is cool too.", "coding");
+      //Assert
+      Assert.AreEqual(0, newRepeatCounter.AddWordMatches());
+    }
+
   }
 }

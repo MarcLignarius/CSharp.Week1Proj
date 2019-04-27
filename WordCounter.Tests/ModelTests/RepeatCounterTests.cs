@@ -10,7 +10,7 @@ namespace WordCounter.Tests
   {
 
     [TestMethod]
-    public void CheckSentence_CheckForOneInstance_Int1()
+    public void CheckSentence_CheckForOneMatch_Int1()
     {
       //Arrange
       RepeatCounter newRepeatCounter = new RepeatCounter("I love coding", "coding");
@@ -26,7 +26,7 @@ namespace WordCounter.Tests
     }
 
     [TestMethod]
-    public void CheckSentence_CheckForMultipleInstances_Int2()
+    public void CheckSentence_CheckForMultipleMatches_Int2()
     {
       //Arrange
       RepeatCounter newRepeatCounter = new RepeatCounter("I love coding I think coding is great!", "coding");

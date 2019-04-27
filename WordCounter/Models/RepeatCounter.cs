@@ -31,16 +31,16 @@ namespace WordCounter.Models
 
     public int AddWordMatches()
     {
-      int instances = 0;
+      int matches = 0;
       string[] userInputSentenceArray = _userInputSentence.Split();
       foreach (string word in userInputSentenceArray)
       {
         if (word == _userInputWord)
         {
-          instances += 1;
+          matches += 1;
         }
       }
-      return instances;
+      return matches;
     }
 
   }

@@ -1,28 +1,47 @@
 using System;
 using System.Collections.Generic;
-
 namespace WordCounter.Models
 {
-  public class Sentence
+  public class RepeatCounter
   {
-    private string _UserInput;
-    private string _FindWord;
+    private string _userInputSentence;
+    private string _userInputWord;
 
-    public Sentence(string userInput, string findWord)
+    public RepeatCounter(string userInputSentence, string userInputWord)
     {
-      _UserInput = userInput;
-      _FindWord = findWord;
+      _userInputSentence = userInputSentence.ToLower();
+      _userInputWord = userInputWord.ToLower();
+    }
+    public string GetSentence()
+    {
+      return _userInputSentence;
+    }
+    public string GetWord()
+    {
+      return _userInputWord;
+    }
+    public void GetNewSentence(string userInputSentence)
+    {
+      _userInputSentence = userInputSentence;
+    }
+    public void GetNewWord(string userInputWord)
+    {
+      _userInputWord = userInputWord;
     }
 
-    public int FindAndCountWord(string userInput, string findWord)
+    public int AddWordMatches()
     {
-      if (userInput.ToLower() == findWord.ToLower())
+      int instances = 0;
+      string[] userInputSentenceArray = _userInputSentence.Split();
+      foreach (string word in userInputSentenceArray)
       {
-        return 1;
+        if (word == _userInputWord)
+        {
+          instances += 1;
+        }
       }
-      return 0;
+      return instances;
     }
-
 
   }
 }

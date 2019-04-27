@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mimim\\desktop\\WordCounter.Solution\\wordcounter.tests\\WordCounter.Tests.csproj": {}
+    "C:\\Users\\mimim\\desktop\\WordCounter.Solution\\WordCounter.Tests\\WordCounter.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mimim\\desktop\\WordCounter.Solution\\wordcounter.tests\\WordCounter.Tests.csproj": {
+    "C:\\Users\\mimim\\desktop\\WordCounter.Solution\\WordCounter.Tests\\WordCounter.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mimim\\desktop\\WordCounter.Solution\\wordcounter.tests\\WordCounter.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\mimim\\desktop\\WordCounter.Solution\\WordCounter.Tests\\WordCounter.Tests.csproj",
         "projectName": "WordCounter.Tests",
-        "projectPath": "C:\\Users\\mimim\\desktop\\WordCounter.Solution\\wordcounter.tests\\WordCounter.Tests.csproj",
+        "projectPath": "C:\\Users\\mimim\\desktop\\WordCounter.Solution\\WordCounter.Tests\\WordCounter.Tests.csproj",
         "packagesPath": "C:\\Users\\mimim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mimim\\desktop\\WordCounter.Solution\\wordcounter.tests\\obj\\",
+        "outputPath": "C:\\Users\\mimim\\desktop\\WordCounter.Solution\\WordCounter.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

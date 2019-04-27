@@ -8,7 +8,10 @@ namespace WordCounter.Models
 
     public static void Main()
     {
-
+      // Console.WriteLine("Enter a sentence: ");
+      // string userInput = Console.ReadLine();
+      // Sentence newSentence = new Sentence(userInput);
+      // Console.WriteLine(newSentence.TrimInput(userInput));
     }
 
   }

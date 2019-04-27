@@ -23,10 +23,10 @@ _All the files necessary to create an Epicodus C# Week 1 Project._
 
 | Behavior | Input | Output |
 | ------------- |:-------------:| -----:|
-| If the user inputs "I love coding." as a sentence, and "coding" as the word to find, the program will return 1. | "I love coding." / "coding" | 1 |
-| If the user inputs "I love coding." as a sentence, and "Coding" as the word to find, the program will return 1. The program is not case sensitive. | "I love coding" / "Coding" | 1 |
-| If the user inputs "I love coding. Coding is great!" as a sentence, and "coding" as the word to find, the program will return 2. | "I love coding. Coding is great!" / "coding" | 2 |
-| If the user inputs "I love coding. Coding is great! I guess decoding is cool too." as a sentence, and "coding" as the word to find, the program will return 2. The program only looks for full word matches only. | "I love coding. Coding is great! I guess decoding is cool too." / "coding" | 2 |
+| If the user inputs "coding" as a sentence, and "coding" as the word to find, the program will return 1. | "I love coding" / "coding" | 1 |
+| If the user inputs "Coding." as a sentence, and "coding" as the word to find, the program will return 1. The program is not case sensitive. | "I love CODING" / "coding" | 1 |
+| If the user inputs "I love coding I think coding is great!" as a sentence, and "coding" as the word to find, the program will return 2. | "I love coding I think coding is great!" / "coding" | 2 |
+| If the user inputs "I love coding I think coding is great! I guess decoding is cool too." as a sentence, and "coding" as the word to find, the program will return 2. The program only looks for full word matches only. | "I love coding I think coding is great! I guess decoding is cool too." / "coding" | 2 |
 
 ## Known Bugs
 

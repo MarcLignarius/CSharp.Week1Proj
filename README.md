@@ -12,17 +12,17 @@ _The logic for this program compares a word against a sentence and returns the n
 
 * _Clone from GitHub_
 * _In your terminal, navigate to WordCounter.Solution/WordCounter/Models_
-* _$mcs Program.cs RepeartCounter.cs_
+* _$mcs Program.cs RepeatCounter.cs_
 * _$mono Program.exe_
 
 ## Specs
 
 | Behavior | Input | Output |
 | ------------- |:-------------:| -----:|
-| If the user inputs "I love coding" as a sentence, and "coding" as the word to find, the program will return 1. | "I love coding" / "coding" | 1 |
-| If the user inputs "I love CODING" as a sentence, and "coding" as the word to find, the program will return 1. The program is not case sensitive. | "I love CODING" / "coding" | 1 |
-| If the user inputs "I love coding I think coding is great!" as a sentence, and "coding" as the word to find, the program will return 2. | "I love coding I think coding is great!" / "coding" | 2 |
-| If the user inputs "I guess decoding is cool too." as a sentence, and "coding" as the word to find, the program will return 0. The program only looks for full word matches only | "I guess decoding is cool too." / "coding" | 0 |
+| The program looks for a word in a sentence and checks if the word appears in the sentence. | "I love coding" / "coding" | 1 |
+| The program is not case sensitive and will return a match no matter which casing is used. | "I love CODING" / "coding" | 1 |
+| The program will count how many times a word appears in a sentence. | "I love coding I think coding is great!" / "coding" | 2 |
+| The program will only take full matches into account, partial matches do not count. | "I guess decoding is cool too." / "coding" | 0 |
 
 ## Known Bugs
 

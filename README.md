@@ -19,10 +19,10 @@ _The logic for this program compares a word against a sentence and returns the n
 
 | Behavior | Input | Output |
 | ------------- |:-------------:| -----:|
-| The program looks for a word in a sentence and checks if the word appears in the sentence. | "I love coding" / "coding" | 1 |
-| The program is not case sensitive and will return a match no matter which casing is used. | "I love CODING" / "coding" | 1 |
-| The program will count how many times a word appears in a sentence. | "I love coding I think coding is great!" / "coding" | 2 |
-| The program will only take full matches into account, partial matches do not count. | "I guess decoding is cool too." / "coding" | 0 |
+| The program looks for a word in a sentence and checks if the word appears in the sentence. | "I love coding" / "coding" - I chose these values because they clearly explain what the specification does. | 1 |
+| The program is not case sensitive and will return a match no matter which casing is used. | "I love CODING" / "coding" - I chose these values because they clearly show that both values have a different casing. | 1 |
+| The program will count how many times a word appears in a sentence. | "I love coding I think coding is great!" / "coding" - I chose these values because they build upon the previous specifications and add another layer of specificity, in this case coding re-appearing later in the sentence.| 2 |
+| The program will only take full matches into account, partial matches do not count. | "I guess decoding is cool too." / "coding" - I chose these values because they're using a similar but different word which explains what this specification does.  | 0 |
 
 ## Known Bugs
 
